@@ -1,0 +1,407 @@
+/* Custom css for player plugin */
+#monarchs {
+        background-color: inherit;
+    width: 100%;
+    float: left;
+   
+    padding-bottom: 145px;
+}
+
+#monarchs .con {
+    max-width: 1400px;
+    margin: 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%
+}
+
+#monarchs .con h1 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "h5_custom_font";
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 100px
+}
+
+#monarchs .con h1::before {
+    content: "The Heroes";
+    font-family: "h5_custom_font";
+    font-weight: 500;
+    font-size: 70px;
+    top: 50%;
+    letter-spacing: 5px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    z-index: 0;
+    opacity: .05
+}
+
+#monarchs .con h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 130%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ed1c24;
+    clear: both
+}
+
+#monarchs .con .wrapper {
+    width: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+    height: 400px
+}
+
+#monarchs .con .wrapper .backgrounds {
+    width: 100%;
+    bottom: 25%;
+    position: absolute;
+    z-index: 1;
+    opacity: .0;
+}
+
+#monarchs .con .wrapper .backgrounds .background_image {
+    display: inline-block;
+    position: relative;
+    max-width: 250px;
+}
+
+#monarchs .con .wrapper .backgrounds .background_image:nth-child(1) {
+    margin-right: -70px;
+    margin-left: 0px;
+    z-index: 1
+}
+
+#monarchs .con .wrapper .backgrounds .background_image:nth-child(2) {
+    margin-right: -70px;
+    margin-left: 0px;
+    z-index: 2
+}
+
+#monarchs .con .wrapper .backgrounds .background_image:nth-child(3) {
+    margin-right: 0px;
+    margin-left: 0px;
+    z-index: 3
+}
+
+#monarchs .con .wrapper .backgrounds .background_image:nth-child(4) {
+    margin-right: 0px;
+    z-index: 2;
+    margin-left: -70px
+}
+
+#monarchs .con .wrapper .backgrounds .background_image:nth-child(5) {
+    margin-right: 0px;
+    z-index: 1;
+    margin-left: -70px
+}
+
+#monarchs .con .wrapper .backgrounds .background_image img {
+    max-height: 381px;
+    max-width: 100%;
+    display: block
+}
+
+#monarchs .con .wrapper .players {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    bottom: 0
+}
+
+#monarchs .con .wrapper .players .player {
+    display: inline-block;
+    position: relative;
+    max-width: 250px
+}
+
+#monarchs .con .wrapper .players .player:hover .player_info {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px)
+}
+
+#monarchs .con .wrapper .players .player:nth-child(1) {
+    margin-right: -100px;
+    margin-left: 0px;
+    z-index: 1
+}
+
+#monarchs .con .wrapper .players .player:nth-child(2) {
+    margin-right: -100px;
+    margin-left: 0px;
+    z-index: 2
+}
+
+#monarchs .con .wrapper .players .player:nth-child(3) {
+    margin-right: 0px;
+    margin-left: 0px;
+    z-index: 3
+}
+
+#monarchs .con .wrapper .players .player:nth-child(4) {
+    margin-right: 0px;
+    z-index: 2;
+    margin-left: -100px
+}
+
+#monarchs .con .wrapper .players .player:nth-child(5) {
+    margin-right: 0px;
+    z-index: 1;
+    margin-left: -100px
+}
+
+#monarchs .con .wrapper .players .player .player_thumbnail {
+    width: 100%;
+    position: relative;
+    max-height: 500px;
+    z-index: 0
+}
+
+#monarchs .con .wrapper .players .player .player_thumbnail::after {
+    content: " ";
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 0px;
+    height: 2px;
+    z-index: 2;
+    display: block;
+    background: #06101b;
+}
+
+#monarchs .con .wrapper .players .player .player_thumbnail img {
+    max-height: 381px;
+    max-width: 100%;
+    display: block;
+    width: auto;
+    height: auto;
+    position: relative;
+    z-index: 1
+}
+
+#monarchs .con .wrapper .players .player .player_info {
+    width: 100%;
+    float: left;
+    position: absolute;
+    top: 90%;
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+#monarchs .con .wrapper .players .player .player_info .circle {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: -8px
+}
+
+#monarchs .con .wrapper .players .player .player_info .circle span {
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background-color: #9a9da2;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    left: 1px;
+}
+
+#monarchs .con .wrapper .players .player .player_info .line {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#monarchs .con .wrapper .players .player .player_info .line span {
+height: 70px;
+width: 182px;
+display: inline-block;
+border-left: 2px solid #9a9da2;
+border-bottom: 2px solid #9a9da2;
+position: absolute;
+}
+
+#monarchs .con .wrapper .players .player .player_info .info {
+    width: 100%;
+    float: left;
+    position: absolute;
+    bottom: 10px;
+    left:7px;
+    text-align: left;
+    /*margin-bottom: 10px*/
+}
+
+#monarchs .con .wrapper .players .player .player_info .info  > div {
+    position: absolute;top: 27px;
+    width: 100%;
+}
+
+#monarchs .con .wrapper .players .player .player_info .info h2 {
+    line-height: 1rem;
+    width: 100%;
+    float: left;
+    margin: 0px;
+    font-size: 30px;
+    font-family: "h5_custom_font";
+    font-weight: 500;
+    color: #15161f;
+    text-transform: uppercase
+}
+
+#monarchs .con .wrapper .players .player .player_info .info h4 {
+    line-height: 2rem;
+
+    font-size: 15px;
+    color: #9a9da2;
+    font-family: "h5_custom_font";
+    font-weight: 700;
+    float: left;
+    margin: 0px
+}
+
+#monarchs .con .wrapper .players .player .player_info .socials {
+    padding-right: 10px;
+    float: right;
+    text-align: center;
+    line-height: 1.56rem;
+}
+
+#monarchs .con .wrapper .players .player .player_info .socials a {
+    display: inline-block;
+    font-size: 14px;
+    color: #15161f;
+    margin-right: 5px;
+    text-decoration: none
+}
+
+#monarchs .con .wrapper .players .player .player_info .socials a:last-of-type {
+    margin-right: 0px
+}
+
+
+@media screen and (max-width: 1250px) {
+    #monarchs .con .wrapper .backgrounds {
+        display: none
+    }
+}
+
+
+
+@media screen and (max-width: 1050px) {
+
+    #monarchs .con h1 {
+        margin-bottom: 50px
+    }
+
+    #monarchs .con .wrapper {
+        height: auto;
+        overflow: hidden
+    }
+
+    #monarchs .con .wrapper .players {
+        position: relative;
+        float: left;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+        flex-flow: wrap row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    #monarchs .con .wrapper .players .player {
+        margin: 0px !important;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%
+    }
+
+    #monarchs .con .wrapper .players .player .player_thumbnail {
+        height: 300px;
+        overflow: hidden;
+        position: relative
+    }
+
+    #monarchs .con .wrapper .players .player .player_thumbnail img {
+        width: 300px;
+        max-width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: top;
+        object-position: top
+    }
+
+    #monarchs .con .wrapper .players .player .player_info {
+        position: relative;
+        margin-top: 20px;
+        top: 0;
+        min-height: 100px;
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px)
+    }
+
+    #monarchs .con .wrapper .players .player .player_info .circle {
+        display: none
+    }
+
+    
+    #monarchs .con .wrapper .players .player .player_info .line {
+    display:block;
+    }
+    #monarchs .con .wrapper .players .player .player_info .line span {
+        position:relative;
+        border:0;
+        text-align: center;
+    }
+    #monarchs .con .wrapper .players .player .player_info .info {
+        position:relative;
+        bottom:0;
+    }
+    #monarchs .con .wrapper .players .player .player_info .info h2 {
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    #monarchs .con .wrapper .players .player {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%
+    }
+}
