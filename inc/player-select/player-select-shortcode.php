@@ -46,8 +46,7 @@ function qpsp_shortcode( $atts ) {
    endwhile;
 
    ?>
-                 
-                    </div>
+                  </div>
                     <div class="players">
                     
  <?php
@@ -102,9 +101,6 @@ function qpsp_shortcode( $atts ) {
                 </div>
             </span>
         </div>
-
-
-
     </div>
 </div>
     <?php
@@ -122,5 +118,5 @@ function qpsp_shortcode( $atts ) {
 }
 
 
-add_shortcode( 'qpsp_shortcode', 'qpsp_shortcode' );
+add_shortcode( 'qpsp_player_select', 'qpsp_shortcode' );
 

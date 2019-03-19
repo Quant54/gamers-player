@@ -18,29 +18,24 @@ if ( ! function_exists( 'add_action' ) ) {
 
 
 $dir = plugin_dir_path(__FILE__);
-require ($dir.'player-select-cpt.php');
-require ($dir.'player-select-shortcode.php');
-require ($dir.'player-select-fields.php');
+$dirps = $dir.'inc/player-select/';
+$dirss = $dir.'inc/social-slider/';
+require ($dirps.'player-select-cpt.php');
+require ($dirps.'player-select-shortcode.php');
+require ($dirps.'player-select-fields.php');
+
+require ($dirss.'social-slider-shortcode.php');
+require ($dirss.'social-slider-cpt.php');
+require ($dirss.'social-slider-fields.php');
 
 function add_style_and_script(){
 	$path_plugin = plugin_dir_url(__FILE__);
-	wp_enqueue_style('player-plugin-css',$path_plugin.'css/player-plugin-style.css');
+	wp_enqueue_style('player-select-css',$path_plugin.'css/player-plugin-style.css');
+	wp_enqueue_style('social-slider-css',$path_plugin.'css/social-slider-style.css');
+	// need to delete after prod
 	wp_enqueue_style('awesome-css','https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+	// end for delete
 }
 
-add_action( 'wp_enqueue_scripts','add_style_and_script');
+add_action( 'get_footer','add_style_and_script');
 
-
-// add_action('admin_menu', 'register_my_custom_submenu_page');
-
-// function register_my_custom_submenu_page() {
-// 	add_submenu_page( 'tools.php', 'Setting Players Section', 'Setting Players Section', 'manage_options', 'my-custom-submenu-page', 'my_custom_submenu_page_callback' ); 
-// }
-
-// function my_custom_submenu_page_callback() {
-// 	// контент страницы
-// 	echo '<div class="wrap">';
-// 		echo '<h2>'. get_admin_page_title() .'</h2>';
-// 	echo '</div>';
-
-// }
