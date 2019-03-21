@@ -1,0 +1,16 @@
+.event-wrapper h1.title {
+	font-size: 28px;
+	padding-bottom: 20px;
+	border-bottom:2px dotted #cccccc;
+}
+
+.event-wrapper .datelink p {
+	float:left;
+}
+.event-wrapper .datelink a {
+	float:right;
+}
+.event-wrapper {
+	background-color: white;
+	padding:5px 20px;
+}
